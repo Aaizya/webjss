@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Aruzhan's Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timecontainer">
+        <h1>Countdown Timer</h1>
+        <div class="timer">
+            <input type="number" id="duration" placeholder="Enter duration (seconds)">
+            <button onclick="startTimer()">Start</button>
+            <div id="display" class="countdown">0</div>
+        </div>
+    </div>
+
+    <div class="formcontainer">
+        <h1>Form Validation</h1>
+        <form id="myForm">
+            <div class="form-control">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-control">
+                <label for "email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="emailError"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
